@@ -26,3 +26,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+      
+      - name: Set Summary
+        id: summary_step
+        run: echo "::set-output name=summary::This is a summary message."
